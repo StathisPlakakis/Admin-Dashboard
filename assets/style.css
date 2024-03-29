@@ -12,6 +12,10 @@ body, p, h1, h2, ul, li {
     grid-template-rows: 150px auto;
 }
 
+
+/* SIDEBAR STYLE AND LAY OUT */
+
+
 .sidebar {
     background-color: blue;
     color: white;
@@ -28,12 +32,21 @@ body, p, h1, h2, ul, li {
 
 .logo, .actions, .settings {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto auto;
     grid-auto-rows: 40px;
     align-items: center;
+    justify-content: start;
     letter-spacing: 1px;
     margin-bottom: 30px;
     margin-top: 10px;    
+}
+
+.actions h3:hover, .settings h3:hover {
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 25px;
 }
 
 .header {
