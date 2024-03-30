@@ -60,11 +60,39 @@ body, p, h1, h2, ul, li {
     width: 30px;
 }
 
+.search {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search :nth-child(1) {
+    margin-left: 30px;
+}
+
+.search :nth-child(3) {
+    margin-left: 60px;
+}
+
+.search :nth-child(5) {
+    margin-right: 40px;
+}
+
 .search .profile {
     height: 35px;
     width: 35px;
     background-color: gray;
     border-radius: 50%;
+}
+
+input[type="text"] {
+    border-radius: 10px;
+    padding-left: 3px;
+}
+input[type="text"]:focus {
+    outline: none;
 }
 
 .search h2 {
