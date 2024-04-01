@@ -170,13 +170,21 @@ input[type="text"]:focus {
     margin-left: 10px;
 }
 
+.main-content .article img:hover {
+    cursor: pointer;
+}
+
 .article {
     border-left: 10px solid gold;
     border-radius: 10px;
-    background-color: antiquewhite;
+    background-color: rgb(250, 235, 215);
     margin: 15px;
     display: grid;
     grid-template-rows: auto 1fr auto;
+}
+
+.article:hover {
+    background-color: rgba(250, 235, 215, 0.8);
 }
 
 .article h4, .article p{
