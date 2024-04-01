@@ -201,4 +201,26 @@ input[type="text"]:focus {
 }
 
 
+/*  MAIN */
+
+.main {
+    background-color: gray;
+}
+.main h3 {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+/* ANNOUNCEMENTS */
+
+.announcements {
+    min-width: 200px;
+}
+
+.announcements h3 {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+
 
