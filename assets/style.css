@@ -1,4 +1,4 @@
-body, p, h1, h2, ul, li {
+body, p, h1, h2, h3, h4 ul, li {
     margin: 0;
     padding: 0;
 }
@@ -8,7 +8,7 @@ body, p, h1, h2, ul, li {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 250px 2fr 1fr ;
+    grid-template-columns: 250px 3fr 1fr ;
     grid-template-rows: auto 1fr;
 }
 
@@ -155,8 +155,42 @@ input[type="text"]:focus {
 }
 
 
-/* MAIN-CONTENT STYLE AND LAY OUT  */
+/* EACH ARTICLE AND MAIN-CONTENT STYLE AND LAY OUT   */
 
 .main-content {
-    background-color: grey;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-auto-rows: 200px;
 }
+
+.main-content .article img {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.article {
+    border-left: 10px solid gold;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    margin: 15px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.article h4, .article p{
+    margin-left: 15px;
+    display: grid;  
+    grid-template-columns: minmax(210px, 1fr);
+    overflow: scroll;
+    overflow-wrap: break-word;
+}
+
+.article div {
+    justify-self: end;
+    margin-right: 10px;
+}
+
+
+
