@@ -214,12 +214,42 @@ input[type="text"]:focus {
 /* ANNOUNCEMENTS */
 
 .announcements {
-    min-width: 200px;
+    min-width: 250px;
 }
 
 .announcements h3 {
     margin-left: 15px;
     margin-top: 15px;
+}
+
+.box1 {
+    display: grid;
+    height: 300px;
+    background-color: antiquewhite;
+    margin-top: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: scroll;
+}
+
+.announcement {
+    display: grid;
+    grid-auto-rows: auto auto;
+    align-content: start;
+}
+
+.announcement h5, .announcement p {
+    display: grid;
+    grid-template-columns: minmax(170px, 1fr);
+    overflow-wrap: break-word;
+
+}
+
+.announcement p {
+    padding-bottom: 15px;
+    border-bottom: 1px solid;
 }
 
 
