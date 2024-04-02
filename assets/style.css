@@ -10,9 +10,20 @@
     --main-content-p-color: rgba(0, 224, 34, 0.7);
 }
 
-body, p, h1, h2, h3, h4 ul, li {
+body, p, h1, h2, h3, ul, li {
     margin: 0;
     padding: 0;
+}
+
+
+
+body, h1, h2, h3, h4, h5 {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 
