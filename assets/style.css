@@ -200,6 +200,7 @@ input[type="text"]:focus {
     width: 30px;
     margin-left: 10px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .main-content .article img:hover {
@@ -218,9 +219,7 @@ input[type="text"]:focus {
 }
 
 .article:hover {
-    box-sizing: border-box;
-    border: 10px solid var(--main-content-text-color);
-    cursor: pointer;
+    border-left: 10px solid gold;
 }
 
 .article h4, .article p{
