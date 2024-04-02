@@ -6,6 +6,8 @@
     --header-text-color: rgb(0, 224, 34);
     --main-content-color: rgb(0,0,0);
     --main-content-text-color: rgb(0, 224, 34);
+    --box-color: rgba(0, 224, 34, 0.1);
+    --main-content-p-color: rgba(0, 224, 34, 0.7);
 }
 
 body, p, h1, h2, h3, h4 ul, li {
@@ -115,6 +117,11 @@ input[type="text"] {
     border: 1px solid var(--header-text-color);
     background-color: var(--header-color);
 }
+
+input[type="text"]::placeholder {
+    color: rgba(0, 224, 34,0.3);
+}
+
 input[type="text"]:focus {
     outline: none;
 }
@@ -207,7 +214,7 @@ input[type="text"]:focus {
     display: grid;
     grid-template-rows: auto 1fr auto;
     color: var(--main-content-text-color);
-    background-color: rgba(0, 224, 34, 0.1);
+    background-color: var(--box-color);
 }
 
 .article:hover {
@@ -242,29 +249,40 @@ input[type="text"]:focus {
     color: var(--main-content-text-color);
 }
 
+.article p {
+    color: var(--main-content-p-color);
+}
+
 /* ANNOUNCEMENTS */
 
 .announcements {
     min-width: 250px;
-    background-color: gray;
+    background-color: var(--main-content-color);
+}
+
+.announcements p {
+    color: var(--main-content-p-color);
 }
 
 .announcements h3 {
+    font-size: 1.5rem;
     margin-left: 15px;
-    margin-top: 15px;
+    margin-top: 25px;
+    color: var(--main-content-text-color);
 }
 
 .box1 {
     display: grid;
     gap: 10px;
     height: 300px;
-    background-color: antiquewhite;
+    background-color: var(--box-color);
     margin-top: 15px;
     margin-right: 15px;
     border-radius: 10px;
     padding-left: 15px;
     padding-right: 15px;
     overflow: scroll;
+    color: var(--main-content-text-color);
 }
 
 .announcement {
@@ -289,12 +307,13 @@ input[type="text"]:focus {
     display: grid;
     gap: 10px;
     height: 300px;
-    background-color: antiquewhite;
+    background-color: var(--box-color);
     margin-top: 15px;
     margin-right: 15px;
     border-radius: 10px;
     padding-right: 15px;
     overflow: scroll;
+    color: var(--header-text-color);
 }
 
 .trend {
