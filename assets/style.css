@@ -4,6 +4,8 @@
     --sidebar-text-color: rgb(0, 224, 34);
     --header-color: rgb(0,0,0);
     --header-text-color: rgb(0, 224, 34);
+    --main-content-color: rgb(0,0,0);
+    --main-content-text-color: rgb(0, 224, 34);
 }
 
 body, p, h1, h2, h3, h4 ul, li {
@@ -101,6 +103,10 @@ body, p, h1, h2, h3, h4 ul, li {
     border-radius: 50%;
 }
 
+.search .profile:hover, #notification:hover {
+    cursor: pointer;
+}
+
 input[type="text"] {
     border-radius: 20px;
     padding: 5px;
@@ -176,16 +182,17 @@ input[type="text"]:focus {
 /* EACH ARTICLE AND MAIN-CONTENT STYLE AND LAY OUT   */
 
 .main-content {
-    background-color: gray;
+    background-color: var(--main-content-color);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     grid-auto-rows: 200px;
 }
 
 .main-content .article img {
-    height: 30px;
+    height: 20px;
     width: 30px;
     margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .main-content .article img:hover {
@@ -193,16 +200,20 @@ input[type="text"]:focus {
 }
 
 .article {
-    border-left: 10px solid gold;
+    border-left: 10px solid var(--main-content-text-color);
     border-radius: 10px;
-    background-color: rgb(250, 235, 215);
+    background-color: var(--main-content-color);
     margin: 15px;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    color: var(--main-content-text-color);
+    background-color: rgba(0, 224, 34, 0.1);
 }
 
 .article:hover {
-    background-color: rgba(250, 235, 215, 0.8);
+    box-sizing: border-box;
+    border: 10px solid var(--main-content-text-color);
+    cursor: pointer;
 }
 
 .article h4, .article p{
@@ -222,11 +233,13 @@ input[type="text"]:focus {
 /*  MAIN */
 
 .main {
-    background-color: gray;
+    background-color: var(--main-content-color);
 }
 .main h3 {
+    font-size: 1.5rem;
     margin-left: 15px;
-    margin-top: 15px;
+    margin-top: 25px;
+    color: var(--main-content-text-color);
 }
 
 /* ANNOUNCEMENTS */
