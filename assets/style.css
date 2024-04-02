@@ -2,7 +2,8 @@
     --sidebar-color: rgb(0,0,0);
     --sidebar-icons-color: rgb(0, 224, 34);
     --sidebar-text-color: rgb(0, 224, 34);
-
+    --header-color: rgb(0,0,0);
+    --header-text-color: rgb(0, 224, 34);
 }
 
 body, p, h1, h2, h3, h4 ul, li {
@@ -62,6 +63,8 @@ body, p, h1, h2, h3, h4 ul, li {
     background-color: aliceblue;
     display: grid;
     grid-column: 2/-1;
+    background-color: var(--header-color);
+    box-shadow: 0px 1px 10px var(--header-text-color);
 }
 
 .header img {
@@ -76,6 +79,7 @@ body, p, h1, h2, h3, h4 ul, li {
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: var(--header-text-color);
 }
 
 .search :nth-child(1) {
@@ -83,7 +87,7 @@ body, p, h1, h2, h3, h4 ul, li {
 }
 
 .search :nth-child(3) {
-    margin-left: 60px;
+    margin-left: 100px;
 }
 
 .search :nth-child(5) {
@@ -98,8 +102,12 @@ body, p, h1, h2, h3, h4 ul, li {
 }
 
 input[type="text"] {
-    border-radius: 10px;
-    padding-left: 3px;
+    border-radius: 20px;
+    padding: 5px;
+    color: var(--header-text-color);
+    font-size: 1rem;
+    border: 1px solid var(--header-text-color);
+    background-color: var(--header-color);
 }
 input[type="text"]:focus {
     outline: none;
@@ -116,6 +124,7 @@ input[type="text"]:focus {
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
+    color: var(--header-text-color);
 }
 
 .greeting .first {
@@ -144,17 +153,19 @@ input[type="text"]:focus {
 
 .greeting .second button {
     box-sizing: border-box;
-    background-color:blue;
-    color: white;
+    color: var(--header-text-color);
+    border: 1px solid ;
     border-radius: 25px;
-    font-size: 0.9rem;
-    border: none;
-    width: 70px;
-    padding: 10px;
+    font-size: 1rem;
+    width: 80px;
+    padding: 5px;
+    background-color: var(--header-color);
 }
+
 
 .greeting .second  button:hover {
     cursor: pointer;
+    background-color: rgba(0, 224, 34,0.3);;
 }
 
 .greeting .second  button:active {
